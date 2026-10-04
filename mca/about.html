@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Department | MCET MCA</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #092c4c;
+    color: white;
+    padding: 12px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.logo-area h1 {
+    font-size: 21px;
+}
+
+.logo-area p {
+    font-size: 12px;
+    color: #cbdbea;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #f39c12;
+}
+
+.page-banner {
+    background:
+        linear-gradient(#092c4ce8,#092c4ce8),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 7%;
+    color: white;
+    text-align: center;
+}
+
+.page-banner h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    color: #d9e8f5;
+}
+
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 65px 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.two-column img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #092c4c;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 9px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    color: #092c4c;
+    margin-bottom: 12px;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.programme {
+    background: #092c4c;
+    color: white;
+}
+
+.programme h2 {
+    color: white;
+    text-align: center;
+}
+
+.programme-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.programme-box {
+    background: white;
+    color: #333;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.programme-box h3 {
+    color: #f39c12;
+    font-size: 25px;
+}
+
+footer {
+    background: #061d31;
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+footer p {
+    color: #b9c9d8;
+}
+
+@media(max-width:900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .programme-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px) {
+
+    .card-container,
+    .programme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner h2 {
+        font-size: 30px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo-area">
+
+<img src="https://img.jagranjosh.com/images/2022/June/962022/11150443_871905256204362_6070624774774597511_n.jpg"
+alt="MCET Logo">
+
+<div>
+<h1>MCET MCA</h1>
+<p>Department of Computer Applications</p>
+</div>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html" class="active">About</a></li>
+
+<li><a href="hod.html">HoD</a></li>
+
+<li><a href="faculty.html">Faculty</a></li>
+
+<li><a href="association.html">Association</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="page-banner">
+
+<h2>About the Department</h2>
+
+<p>Department of Computer Applications</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="two-column">
+
+<div>
+
+<h2>Department of Computer Applications</h2>
+
+<p>
+The Department of Computer Applications is dedicated to providing
+quality education in the field of computer applications and
+information technology.
+</p>
+
+<p>
+The department provides students with opportunities to develop
+technical knowledge, programming skills, analytical thinking,
+communication skills and professional capabilities.
+</p>
+
+<p>
+Students are encouraged to participate in projects, seminars,
+workshops, technical competitions and other academic activities.
+</p>
+
+</div>
+
+
+<img src="https://mcet.ac.in/wp-content/uploads/elementor/thumbs/home-about-qnk0vfqkqmjd05rlf3gbmdpn622vdpxn8rzqt4k2iy.jpg"
+alt="Computer Science Students">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" style="background:white;">
+
+<div class="container">
+
+<div class="card-container">
+
+<div class="card">
+
+<div class="icon"></div>
+
+<h3>Our Vision</h3>
+
+<p>
+To develop the department as a centre of excellence in education,
+research, development and consultancy in the field of Computer
+Applications.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon"></div>
+
+<h3>Our Mission</h3>
+
+<p>
+To provide students with strong theoretical and practical
+knowledge and prepare them for successful careers in the
+technology industry.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon"></div>
+
+<h3>Technical Education</h3>
+
+<p>
+Students are exposed to programming, databases, web technologies,
+software development and modern computing concepts.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon"></div>
+
+<h3>Innovation</h3>
+
+<p>
+The department encourages innovation, creativity, teamwork,
+research and project-based learning.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+</body>
+
+</html>

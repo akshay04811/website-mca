@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MCA Association | MCET</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #092c4c;
+    color: white;
+    padding: 12px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.logo-area h1 {
+    font-size: 21px;
+}
+
+.logo-area p {
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #f39c12;
+}
+
+.banner {
+    background:
+        linear-gradient(#092c4ceb,#092c4ceb),
+        url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 85px 7%;
+}
+
+.banner h2 {
+    font-size: 42px;
+}
+
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 65px 0;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro h2 {
+    color: #092c4c;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.event {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.event-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.event h3 {
+    color: #092c4c;
+    margin-bottom: 10px;
+}
+
+.event p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.activities {
+    background: #092c4c;
+    color: white;
+}
+
+.activities h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.activity-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.activity {
+    background: #123f62;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.activity h3 {
+    color: #f39c12;
+    margin-bottom: 8px;
+}
+
+.activity p {
+    color: #d4e2ed;
+}
+
+footer {
+    background: #061d31;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer p {
+    color: #b9c9d8;
+    margin-top: 10px;
+}
+
+@media(max-width:850px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .events,
+    .activity-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo-area">
+
+<img src="https://img.jagranjosh.com/images/2022/June/962022/11150443_871905256204362_6070624774774597511_n.jpg">
+
+<div>
+
+<h1> MCA</h1>
+
+<p>Department of Computer Applications</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="hod.html">HoD</a></li>
+
+<li><a href="faculty.html">Faculty</a></li>
+
+<li><a href="association.html" class="active">Association</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<section class="banner">
+
+<h2>MCA Association</h2>
+
+<p>MCA Students & Staff Association</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>About MCA Association</h2>
+
+<p>
+MCA provides students with a platform to participate in
+technical, academic, cultural and professional activities.
+The association encourages teamwork, leadership, creativity
+and innovation among MCA students.
+</p>
+
+</div>
+
+
+<div class="events">
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Technical Events</h3>
+
+<p>
+Programming competitions, coding activities and technical
+competitions help students improve their practical skills.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Seminars</h3>
+
+<p>
+Students can attend expert talks and seminars related to
+modern technologies and career opportunities.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Competitions</h3>
+
+<p>
+Technical quizzes, project competitions and innovation events
+encourage students to demonstrate their abilities.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Innovation</h3>
+
+<p>
+Students are encouraged to develop new ideas, prototypes
+and technology-based solutions.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Cultural Activities</h3>
+
+<p>
+The association also provides opportunities for students
+to participate in cultural and social activities.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<div class="event-icon"></div>
+
+<h3>Team Building</h3>
+
+<p>
+Group activities help students improve communication,
+leadership and teamwork skills.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section activities">
+
+<div class="container">
+
+
+
+</body>
+
+</html>

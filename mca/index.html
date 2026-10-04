@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MCET MCA Department | Home</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* FULL PAGE BACKGROUND */
+        body {
+            background:
+                linear-gradient(
+                    rgba(5, 30, 55, 0.75),
+                    rgba(5, 30, 55, 0.75)
+                ),
+                url("https://img.jagranjosh.com/images/2022/June/962022/11150443_871905256204362_6070624774774597511_n.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #092c4c;
+            color: white;
+            padding: 12px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: white;
+            padding: 3px;
+        }
+
+        .logo-area h1 {
+            font-size: 22px;
+        }
+
+        .logo-area p {
+            font-size: 13px;
+            color: #d5e7f7;
+            margin-top: 4px;
+        }
+
+        /* NAVIGATION */
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #f39c12;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 500px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 span {
+            color: #f39c12;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* BUTTON */
+
+        .btn {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 13px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #d68910;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: #092c4c;
+        }
+
+        /* SECTIONS */
+
+        .section {
+            padding: 60px 7%;
+            background: transparent;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: white;
+        }
+
+        /* FEATURES */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #092c4c;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+
+        .about-preview {
+            background: rgba(255, 255, 255, 0.90);
+        }
+
+        .about-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-box img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .about-box h2 {
+            color: #092c4c;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .about-box p {
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* VISION / MISSION / PEO / PSO */
+
+        .department-info {
+            padding: 50px 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 25px;
+        }
+
+        .info-card {
+            background: rgba(255, 255, 255, 0.96);
+            border: 2px solid #65c4eb;
+            padding: 25px 18px;
+            min-height: 255px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .info-card h2 {
+            text-align: center;
+            color: #0645ad;
+            font-size: 27px;
+            margin-bottom: 25px;
+        }
+
+        .info-card h2::after {
+            content: "";
+            display: block;
+            width: 65px;
+            height: 3px;
+            background: #b5122f;
+            margin: 12px auto 0;
+        }
+
+        .info-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .info-card strong {
+            color: #111;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #061d31;
+            color: white;
+            padding: 35px 7%;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        footer h3 {
+            margin-bottom: 12px;
+            color: #f39c12;
+        }
+
+        footer p,
+        footer li {
+            color: #cbd6df;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #345;
+            margin-top: 25px;
+            padding-top: 18px;
+            color: #aab8c4;
+            font-size: 13px;
+        }
+
+        /* TABLET */
+
+        @media(max-width: 900px) {
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-box {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 800px) {
+
+            .department-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 4px;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo-area">
+
+        <img src="https://img.jagranjosh.com/images/2022/June/962022/11150443_871905256204362_6070624774774597511_n.jpg"
+             alt="Mohandas College Logo">
+
+        <div>
+            <h1>MCET MCA</h1>
+            <p>Department of Computer Applications</p>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="hod.html">HoD</a>
+            </li>
+
+            <li>
+                <a href="faculty.html">Faculty</a>
+            </li>
+
+            <li>
+                <a href="association.html">Association</a>
+            </li>
+
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            Welcome to <span>MCA Department</span>
+        </h2>
+
+        <p>
+            Mohandas College of Engineering and Technology
+            <br>
+            Department of Computer Applications
+        </p>
+
+        <p>
+            Learn, innovate and build the future through technology,
+            creativity and practical knowledge.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- EXPLORE -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Explore Our Department</h2>
+
+        <p>
+            Everything you need to know about the MCA Department
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature-card">
+
+            <h3>About Department</h3>
+
+            <p>
+                Learn about the department, its vision, mission,
+                academic programmes and learning environment.
+            </p>
+
+            <br>
+
+            <a href="about.html" class="btn">
+                Read More
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>HoD Profile</h3>
+
+            <p>
+                Know more about the Head of the Department,
+                academic background and professional experience.
+            </p>
+
+            <br>
+
+            <a href="hod.html" class="btn">
+                View Profile
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>MCA Association</h3>
+
+            <p>
+                Explore student activities, technical events,
+                seminars, competitions and association programmes.
+            </p>
+
+            <br>
+
+            <a href="association.html" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>Department Gallery</h3>
+
+            <p>
+                Browse photographs of events, workshops,
+                students, campus activities and celebrations.
+            </p>
+
+            <br>
+
+            <a href="gallery.html" class="btn">
+                View Gallery
+            </a>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <h3>College Website</h3>
+
+            <p>
+                Visit the official Mohandas College website
+                for more information about the institution.
+            </p>
+
+            <br>
+
+            <a href="https://mcet.ac.in/"
+               class="btn"
+               target="_blank">
+                Visit Website
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about-preview">
+
+    <div class="about-box">
+
+        <img src="https://mcet.ac.in/wp-content/uploads/2024/04/mca_thumb-1.jpg"
+             alt="Students">
+
+        <div>
+
+            <h2>
+                Department of Computer Applications
+            </h2>
+
+            <p>
+                The Department of Computer Applications provides
+                students with a strong foundation in computer science,
+                software development, emerging technologies and
+                professional skills.
+            </p>
+
+            <p>
+                The department encourages students to participate
+                in technical activities, projects, seminars,
+                workshops and other academic programmes.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VISION / MISSION / PEO / PSO -->
+
+<section class="department-info">
+
+    <div class="info-card">
+
+        <h2>
+            Vision of the Department
+        </h2>
+
+        <p>
+            To become a Centre of excellence in research, education,
+            development and consultancy in the field of Computer Applications.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h2>
+            Mission of the Department
+        </h2>
+
+        <p>
+            <strong>M1:</strong>
+            Provide a strong theoretical and practical competence
+            in computer application.
+        </p>
+
+        <p>
+            <strong>M2:</strong>
+            Provide students with necessary skills to become
+            successful professionals, responsible citizens and
+            life-long learners.
+        </p>
+
+        <p>
+            <strong>M3:</strong>
+            Develop technical solutions in the field of Information
+            Technology for the society and Industry.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h2>
+            Program Educational Objective
+        </h2>
+
+        <p>
+            <strong>PEO 1:</strong>
+            Establish career in software industry, academia or launch startup.
+        </p>
+
+        <p>
+            <strong>PEO 2:</strong>
+            Pursue continuous learning through higher studies and research
+            in the field of Computer Applications and other allied streams.
+        </p>
+
+        <p>
+            <strong>PEO 3:</strong>
+            Establish themselves as technical solution architects by the
+            application of Information Technology for the benefit of common
+            man and society.
+        </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <h2>
+            Program Specific Outcomes (PSOs)
+        </h2>
+
+        <p>
+            <strong>PSO 1:</strong>
+            Ability to apply the skill and knowledge in designing,
+            implementing and testing of software systems for practical purpose.
+        </p>
+
+        <p>
+            <strong>PSO 2:</strong>
+            Pursuing continuous learning through higher studies and research
+            in the field of Computer Application and other allied streams.
+        </p>
+
+        <p>
+            <strong>PEO 3:</strong>
+            Enabling to carry out a professional and proactive approach,
+            good interpersonal skills towards projects/multidisciplinary
+            research activities.
+        </p>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
